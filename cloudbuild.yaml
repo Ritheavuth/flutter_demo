@@ -11,9 +11,9 @@
    args:
    - 'run'
    - 'deploy'
-   - '${_SERVICE_NAME}'
+   - '${_SERVICE_NAME}:$COMMIT_SHA'
    - '--image'
-   - 'gcr.io/${_PROJECT_ID}/${_SERVICE_NAME}:$COMMIT_SHA'
+   - 'gcr.io/${_PROJECT_ID}/${_SERVICE_NAME}'
    - '--region'
    - '${_REGION}'
  images:
